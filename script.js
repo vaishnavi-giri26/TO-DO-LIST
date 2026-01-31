@@ -78,6 +78,11 @@ function showTasks() {
     const checkbox = document.createElement('input');
     const span = document.createElement('span');
     const deleteBtn = document.createElement('button');
+        document.createElement('button');
+        deleteBtn.addEvent;istener("click",() =>{
+            tasks=tasks.filter(t => t.id !==task.id);
+            applyFilter();
+        });
 
     //adding attributes and values
     checkbox.type = 'checkbox';
@@ -138,3 +143,4 @@ clear.addEventListener('click',()=>{
     tasks = tasks.filter(task => !task.completed);
     applyFilter();
 })
+
